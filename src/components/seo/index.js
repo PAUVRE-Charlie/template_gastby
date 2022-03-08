@@ -3,20 +3,18 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
-import { useI18next } from 'gatsby-plugin-react-i18next';
-import { useTranslation } from 'react-i18next';
+// import { useI18next } from 'gatsby-plugin-react-i18next';
+// import { useTranslation } from 'react-i18next';
 import '../index.css';
 
 const Seo = ({ title, description, image }) => {
-  const { t } = useTranslation('home');
-
   const { pathname } = useLocation();
-  const { language } = useI18next();
+  // const { language } = useI18next();
   const { site } = useStaticQuery(query);
   const { defaultTitle, defaultDescription, defaultImage, siteUrl } = site.siteMetadata;
   const seo = {
     title: title || defaultTitle,
-    description: t(description || defaultDescription),
+    description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
@@ -25,7 +23,8 @@ const Seo = ({ title, description, image }) => {
     <Helmet
       title={seo.title}
       htmlAttributes={{
-        lang: language,
+        // lang: language,
+        lang: "en"
       }}
     >
       <meta name='description' content={seo.description} />

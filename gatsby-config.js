@@ -1,5 +1,5 @@
 // The default metadata that will be used in the SEO component
-emodule.export = {
+module.export = {
   siteMetadata: {
     title: '', // the default name of the tab
     description: '', // the description of your website

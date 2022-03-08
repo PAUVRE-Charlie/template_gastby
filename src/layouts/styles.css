@@ -26,8 +26,8 @@ body {
   --red: #ff2234;
   --scrollbar-background-color: var(--white);
   --scrollbar-thumb-color: var(--black);
-  --font-big: Brice;
-  --font-small: NeueMetana;
+  /* --font-big: Brice;
+  --font-small: NeueMetana; */
   --border: 5px solid var(--black);
 }
 
@@ -182,11 +182,22 @@ select {
 }
 
 #app {
-  padding: 24px 8%;
   min-height: 100%;
-  background-color: var(--scrollbar-background-color);
+  background-color: var(--white);
   overflow: hidden;
 }
+
+#content {
+}
+
+header {
+}
+
+footer {
+}
+
+
+
 
 @media screen and (max-width: 1000px) {
   h1 {

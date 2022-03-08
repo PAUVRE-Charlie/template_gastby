@@ -1,17 +1,12 @@
 // The default metadata that will be used in the SEO component
-module.export = {
+module.exports = {
   siteMetadata: {
     title: '', // the default name of the tab
     description: '', // the description of your website
     image: '', // image that appears below the link when sharing
     url: '', // the url where your site will be
   },
-
-  /*
-    The librairies added to the default gastby starter pack. To in
-
-    npm install --save-dev prettier gatsby-plugin-preact preact preact-render-to-string gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp gatsby-plugin-react-helmet
-*/
+  
   plugins: [
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',

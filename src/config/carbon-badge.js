@@ -1,7 +1,7 @@
 const importScriptCarbonBadge = () => {
   const wcID = e => document.getElementById(e);
   const wcU = encodeURIComponent(window.location.href);
-  const newRequest = function () {
+  const newRequest = async function () {
     fetch('https://api.websitecarbon.com/b?url=' + encodeURIComponent(window.location.href))
       .then(function (e) {
         if (!e.ok) throw Error(e);

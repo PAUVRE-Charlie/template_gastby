@@ -36,6 +36,12 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        https: true,
+      },
+    },
     /*
   The config section necessary to use react-i18next (to obtain a multi-language website)
   --- to install it, use npm install --save gatsby-plugin-react-i18next i18next react-i18next

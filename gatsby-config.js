@@ -45,6 +45,7 @@ module.exports = {
     /*
   The config section necessary to use react-i18next (to obtain a multi-language website)
   --- to install it, use npm install --save gatsby-plugin-react-i18next i18next react-i18next
+  --- then, do not forget to add the query on all pages to get the translations, by importing the graphql from gatsby.
 
   if you do not need it, please remove the translations folder located at the root of this project
 
